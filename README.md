@@ -27,16 +27,16 @@ Menu of the program :
 
 To Run : python saitodolist.py
 
-<img width="1372" height="370" alt="Screenshot 2026-10-21 161322" src="https://github.com/user-attachments/assets/c3b6fa36-7c7d-42a3-9f30-a1c067348433" />
+<img width="302" height="257" alt="Screenshot 2026-10-21 180848" src="https://github.com/user-attachments/assets/4cc2e4ed-3a6b-4091-8004-00e0265da382" />
 
-<img width="1066" height="337" alt="Screenshot 2026-10-21 161404" src="https://github.com/user-attachments/assets/0d5f63cc-b8c4-4b83-aec7-77e0c9c0e49f" />
+<img width="305" height="347" alt="Screenshot 2026-10-21 180823" src="https://github.com/user-attachments/assets/8378206b-f25b-4f91-a457-fc1d2875fa29" />
 
-<img width="1027" height="350" alt="Screenshot 2026-10-21 161448" src="https://github.com/user-attachments/assets/86fd4fde-043d-47f3-bd0c-f8ac1bbc4277" />
+<img width="915" height="387" alt="Screenshot 2026-10-21 180754" src="https://github.com/user-attachments/assets/833a4195-61c5-48d2-a9fe-34dc6ef2bcc2" />
 
-<img width="487" height="290" alt="Screenshot 2026-10-21 161531" src="https://github.com/user-attachments/assets/970b9196-aae5-4f52-b0eb-887f2c1ab8a9" />
+<img width="370" height="282" alt="Screenshot 2026-10-21 180525" src="https://github.com/user-attachments/assets/aa52ad3d-388a-434a-8d4b-0303aee4b3e1" />
 
-<img width="1266" height="376" alt="Screenshot 2026-10-21 162026" src="https://github.com/user-attachments/assets/db0fac46-c945-4455-a9b1-6b5e5c7d0f44" />
+<img width="626" height="347" alt="Screenshot 2026-10-21 180500" src="https://github.com/user-attachments/assets/314d4bf4-f4ce-4f07-8111-898bdf96e4f2" />
 
-<img width="431" height="362" alt="Screenshot 2026-10-21 162100" src="https://github.com/user-attachments/assets/4697559b-8665-45dc-9eeb-a7b2abd37a48" />
+<img width="602" height="325" alt="Screenshot 2026-10-21 180428" src="https://github.com/user-attachments/assets/0b34cdac-ea14-4dab-9584-1edce9bf2018" />
 
-<img width="322" height="267" alt="Screenshot 2026-10-21 162454" src="https://github.com/user-attachments/assets/487aff6f-1e63-4877-b15a-810380fa0c01" />
+<img width="842" height="352" alt="Screenshot 2026-10-21 180344" src="https://github.com/user-attachments/assets/c6acb487-f1ed-4e94-96e1-671b12dc6b9b" />
