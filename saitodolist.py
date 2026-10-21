@@ -6,26 +6,21 @@ CATEGORIES = ["work", "study", "personal"]
 PRIORITIES = ["high", "medium", "low"]
 PRIORITY_ORDER = {"high": 1, "medium": 2, "low": 3}
 
-
 def load_tasks():
     if not os.path.exists(FILE_NAME):
         return []
     with open(FILE_NAME, "r") as file:
         return json.load(file)
-
-
+        
 def save_tasks(tasks):
     with open(FILE_NAME, "w") as file:
         json.dump(tasks, file, indent=4)
-
-
+        
 def get_priority_rank(task):
     return PRIORITY_ORDER[task["priority"]]
 
-
 def sort_tasks(tasks):
     tasks.sort(key=get_priority_rank)
-
 
 def ask_choice(question, options, default=None):
     while True:
@@ -35,7 +30,6 @@ def ask_choice(question, options, default=None):
         if answer in options:
             return answer
         print("Invalid choice, try again.")
-
 
 def ask_task_number(tasks):
     if len(tasks) == 0:
@@ -51,13 +45,11 @@ def ask_task_number(tasks):
         return None
     return number - 1
 
-
 def print_task(number, task):
     status = "Completed" if task["done"] else "Incomplete"
     print(f"{number}. [{status}] {task['title']} ({task['category']}, {task['priority']})")
     if task["description"]:
-        print(f"      Description: {task['description']}")
-
+        print(f" Description: {task['description']}")
 
 def add_task(tasks):
     title = input("Title: ").strip()
@@ -80,7 +72,6 @@ def add_task(tasks):
     save_tasks(tasks)
     print("Task added.")
 
-
 def view_tasks(tasks):
     if len(tasks) == 0:
         print("No tasks yet.")
@@ -88,7 +79,6 @@ def view_tasks(tasks):
     print("\n--- All Tasks ---")
     for i, task in enumerate(tasks, start=1):
         print_task(i, task)
-
 
 def filter_tasks(tasks):
     category = ask_choice("Show which category", CATEGORIES)
@@ -101,7 +91,6 @@ def filter_tasks(tasks):
     if not found:
         print("No tasks in this category.")
 
-
 def complete_task(tasks):
     index = ask_task_number(tasks)
     if index is None:
@@ -109,7 +98,6 @@ def complete_task(tasks):
     tasks[index]["done"] = True
     save_tasks(tasks)
     print("Task marked as completed.")
-
 
 def edit_task(tasks):
     index = ask_task_number(tasks)
@@ -133,7 +121,6 @@ def edit_task(tasks):
     save_tasks(tasks)
     print("Task updated.")
 
-
 def delete_task(tasks):
     index = ask_task_number(tasks)
     if index is None:
@@ -141,7 +128,6 @@ def delete_task(tasks):
     removed = tasks.pop(index)
     save_tasks(tasks)
     print(f"Deleted: {removed['title']}")
-
 
 def show_summary(tasks):
     completed = 0
@@ -154,7 +140,6 @@ def show_summary(tasks):
     print(f"Pending:   {pending}")
     print(f"Completed: {completed}")
 
-
 def show_menu():
     print("\n===== TODO LIST =====")
     print("1. Add task")
@@ -165,7 +150,6 @@ def show_menu():
     print("6. Delete task")
     print("7. Summary")
     print("8. Exit")
-
 
 def main():
     tasks = load_tasks()
